@@ -1,0 +1,20 @@
+.profile-panel {
+    border: solid black 2px;
+}
+
+/* Navbar */
+
+
+.income-chart {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.production-chart {
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.chart-container h1 {
+    margin: 40px 80px 20px;
+}

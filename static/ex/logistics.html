@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doccument</title>
+
+    <!-- Navbar -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="logistics.css">
+
+    <!-- Charts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    
+
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light w-full bg-light z-50">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">AgriNet</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/admin">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/logistics">Statistics</a>
+              </li>
+            </ul>
+          </div>
+          <button  type="button" class=" logoutUser btn btn-outline-primary">Logout</button>
+        </div>
+      </nav>
+
+    <!-- Chart Section -->
+    <div class="col-lg-8 col-md-12 col-sm-12 labour-chart mx-auto">
+      <h2 style="text-align: center">IMPACT BEING CREATED</h2>
+      <div class="container">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                REGIONS
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Aaloo Khet</a>
+                <a class="dropdown-item" href="#">Angora Farm</a>
+                <a class="dropdown-item" href="#">Chaubatia Gardens</a>
+                <a class="dropdown-item" href="#">Macchi Tal</a>
+                <a class="dropdown-item" href="#">Ram Tal Horticulture Garden</a>
+
+            </div>
+        </div>
+        <br>
+        <h4>People employed against the activites</h4>
+        <canvas id="myLabourChart"></canvas>
+    </div>
+    <div class="col-lg-9 col-md-12 col-sm-12 pie-chart mx-auto">
+      <h4>Relationship between Wages and Material-Cost</h4>
+      <canvas id="myPieChart"></canvas>
+  </div>
+    <div class="row ">
+        <div class="col-lg-9 col-md-10 col-sm-10 mx-auto  activity-content">
+            <h4>Seeding</h4>
+            It can also be propagated through seeds at 4 kg/ha. Seedlings are to be raised and transplanted during June
+            – July or October – November.
+        </div>
+
+        <div class="col-lg-9 col-md-10 col-sm-10 mx-auto activity-content">
+            <h4>Planting</h4>
+            It can be propagated by slips. About 55,600 slips can be planted in a at a spacing of 60 x 30 cm in ridges.
+            Also 60 X 45 cm spacing can also be planted to adopt 37,000 slips/ha.
+        </div>
+        <div class="col-lg-9 col-md-10 col-sm-10 mx-auto activity-content">
+            <h4>Manuring</h4>
+            Apply FYM or compost at 20 - 25 t/ha as basal. Apply 50 kg N/ha annually, half at planting and half one
+            month after planting. From the second year onwards, first dose of fertilizer should be applied after cutting
+            and again one month after the first dose.
+        </div>
+        <div class="col-lg-9 col-md-10 col-sm-10 mx-auto activity-content">
+            <h4>Irrigation</h4>
+            Life irrigation on third day and further irrigation at 7 - 15 days interval.
+        </div>
+        <div class="col-lg-9 col-md-10 col-sm-10 mx-auto activity-content">
+            <h4>Pest-control</h4>
+            In general, pests and diseases may not affect the plant. If there is any sucking pest spray Methyl demeton
+            25 EC or Dimethoate 30 EC 1 ml/lit. For caterpillars spray Phosalone 35 EC or Monocrotophos 36 EC 2 ml/lit.
+        </div>
+    </div>
+   
+
+
+    <script src="logistics.js"></script>
+</body>
